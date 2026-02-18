@@ -1,0 +1,17 @@
+{
+  "name": "@flex-human/types",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./core": "./src/core.ts",
+    "./platform": "./src/platform.ts",
+    "./intelligence": "./src/intelligence.ts",
+    "./memory": "./src/memory.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  }
+}

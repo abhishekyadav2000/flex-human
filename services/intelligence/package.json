@@ -1,0 +1,22 @@
+{
+  "name": "@flex-human/intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@flex-human/types": "workspace:*",
+    "@flex-human/security": "workspace:*"
+  },
+  "devDependencies": {
+    "@flex-human/config": "workspace:*",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@flex-human/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "migrate": "tsx src/db/migrate.ts"
+  },
+  "dependencies": {
+    "@flex-human/types": "workspace:*",
+    "@flex-human/security": "workspace:*",
+    "fastify": "^5.0.0",
+    "@fastify/cors": "^10.0.0",
+    "@fastify/cookie": "^11.0.0",
+    "@fastify/rate-limit": "^10.0.0",
+    "postgres": "^3.4.0"
+  },
+  "devDependencies": {
+    "@flex-human/config": "workspace:*",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
