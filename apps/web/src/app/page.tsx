@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { FluidBackground } from '@/components/FluidBackground';
 import { SectionHeading } from '@/components/SectionHeading';
 import { VideoEmbed } from '@/components/VideoEmbed';
 import { CTABanner } from '@/components/CTABanner';
@@ -95,7 +94,11 @@ export default function HomePage() {
     <main>
       {/* ============ HERO ============ */}
       <section className="relative min-h-[95vh] flex flex-col items-center justify-center px-6 text-center overflow-hidden">
-        <FluidBackground />
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/flex-human-hero-dark-cinematic.png')" }}
+        />
+        <div className="absolute inset-0 bg-black/45 z-[1]" />
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-surface-DEFAULT to-transparent z-[1]" />
 
         <div className="relative z-[2] max-w-[1280px] mx-auto">
