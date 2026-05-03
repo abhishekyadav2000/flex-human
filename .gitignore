@@ -16,3 +16,7 @@ coverage/
 .nyc_output/
 
 docker/data/
+
+prune-out/
+
+.vercel
